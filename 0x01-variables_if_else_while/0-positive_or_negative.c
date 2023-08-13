@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main -  Entry point
  * Return: 0 (success)
@@ -17,11 +16,11 @@ int main(void)
 	{
 		printf("is positive\n");
 	}
-	else if (n == 0) 
+	else if (n == 0)
 	{
 		printf("is zero\n");
 	}
-	else 
+	else
 	{
 		printf("is negative\n");
 	return (0);
