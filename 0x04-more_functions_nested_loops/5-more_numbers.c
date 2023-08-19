@@ -2,9 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_numbers - a function that checks for uppercase character.
- * @i:integer to display output
- * @j:extra counter
+ * more_numbers - a function that checks for uppercase character.
  */
 
 void more_numbers(void)
@@ -16,7 +14,9 @@ void more_numbers(void)
 	{
 		for (i = 0; i <= 14; i++)
 		{
-			_putchar(i + '0');
+			if (i > 9)
+			_putchar((i/10) + '0');
+			_putchar((i%10) + '0');
 		}
 		_putchar('\n');
 	}

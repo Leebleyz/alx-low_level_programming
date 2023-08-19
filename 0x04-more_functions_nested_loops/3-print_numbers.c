@@ -3,8 +3,6 @@
 
 /**
  * print_numbers - a function that checks for uppercase character.
- * @i:integer to display output
- * 
  */
 
 void print_numbers(void)
