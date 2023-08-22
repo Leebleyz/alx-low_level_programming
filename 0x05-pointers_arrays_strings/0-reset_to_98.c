@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * modif_my_param - this function does not modify n
+ * reset_to_98 - this function does not modify n
  * @m: a useless integer
  *
  * Return: nothing.
