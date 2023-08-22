@@ -9,9 +9,10 @@
 /* Function definition */
 void rev_string(char *s)
 {
+	int left = 0;
 	char temp = *(s + left);
 	int len = 0;
-	int left = 0, right = len - 1;
+	int right = len - 1;
 
 	if (s == NULL)
 	{
