@@ -6,16 +6,20 @@
 
 char* generatePassword()
 {
-	char* password = malloc(PASSWORD_LENGTH + 1);
+	int randomChar;
+	char* password;
+	int i;
+
+	password = malloc(PASSWORD_LENGTH + 1);
 	if (password == NULL)
 	{
 		fprintf(stderr, "Memory allocation failed\n");
 		exit(1);
 	}
     
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
-	int randomChar = rand() % 62;
+	randomChar = rand() % 62;
 	if (randomChar < 26)
 	{
 		password[i] = 'a' + randomChar;
@@ -36,9 +40,11 @@ char* generatePassword()
 
 int main()
 {
+	char* password;
+
 	srand(time(0));
 
-	char* password = generatePassword();
+	password = generatePassword();
 
 	if (password != 0)
 	printf("Tada! Congrats\n");
