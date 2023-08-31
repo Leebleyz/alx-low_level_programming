@@ -10,4 +10,5 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 char _putchar(char c);
 int _sqrt_helper(int n, int start, int end);
+int is_prime_helper(int n, int divisor);
 #endif
